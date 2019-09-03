@@ -4,9 +4,6 @@
         "client_secret": "",
         "tenant_id": "",
         "subscription_id": "",
-        "managed_image_prefix": "",
-        "managed_image_resource_group_name": "",
-        "PackageLocation": "",
         "WorkingDirectory": "{{env `System_DefaultWorkingDirectory`}}" 
       },
     "builders": [{
@@ -42,32 +39,10 @@
   }],
   "Provisioners": [ 
     {
-        "type": "powershell",
-        "script": "tls_config.ps1" 
-    },    
-    {
-        "type": "powershell",
-        "script": "packer_config.ps1"
-    },
-    {
-        "type": "powershell",
-        "script": "symantec_prep.ps1"
-    },  
-    {
-        "type": "powershell",
-        "script": "mount_format_drive.ps1"
-    },
-    {
-        "type": "powershell",
-        "script": "melissa_download.ps1"
-    },
-    {
-        "type": "powershell",
-        "script": "fa_app_stage.ps1"
-    },
-    {
     "type": "powershell",
     "inline": [
+        "Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))",
+        "choco install python --version 3.5.4",
         " # NOTE: the following *3* lines are only needed if the you have installed the Guest Agent.",
         "  while ((Get-Service RdAgent).Status -ne 'Running') { Start-Sleep -s 5 }",
         "  while ((Get-Service WindowsAzureTelemetryService).Status -ne 'Running') { Start-Sleep -s 5 }",
