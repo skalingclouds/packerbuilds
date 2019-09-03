@@ -1,4 +1,4 @@
 - task: PackerBuild@1
   inputs:
     templateType: 'custom'
-    customTemplateLocation: 'sc-windowsbuild-v1.json'
+    customTemplateLocation: 'sc-windowsbuild-v2.json'
