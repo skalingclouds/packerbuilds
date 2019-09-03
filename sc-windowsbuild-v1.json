@@ -11,10 +11,10 @@
       },
     "builders": [{
     "type": "azure-arm",
-    "client_id": "58407f81-03e0-4e03-a7f7-3dd0844c9e5c",
-    "client_secret": "C0nn3ct4",
-    "tenant_id": "72f988bf-86f1-41af-91ab-2d7cd011db47",
-    "subscription_id": "d7cc508e-d2cc-46d7-8185-5b4cb24827bb",
+    "client_id": "{{user `client_id`}}",
+    "client_secret": "{{user `client_secret`}}",
+    "tenant_id": "{{user `tenant_id`}}",
+    "subscription_id": "{{user `subscription_id`}}",
     "shared_image_gallery_destination": {
       "resource_group": "sc-rg-infraautomation-01",
       "gallery_name": "scsig01",
