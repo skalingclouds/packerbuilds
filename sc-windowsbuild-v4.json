@@ -36,7 +36,7 @@
         "winrm_username": "packer",
         "location": "West US 2",
         "vm_size": "Standard_D16s_v3",
-        "disk_additional_size": 150,
+        "disk_additional_size": 150
   }
 ],
 
