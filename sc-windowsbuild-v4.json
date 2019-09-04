@@ -35,7 +35,7 @@
         "winrm_timeout": "3m",
         "winrm_username": "packer",
         "location": "West US 2",
-        "vm_size": "Standard_D16s_v3",
+        "vm_size": "Standard_D16s_v3"
   }
 ],
 
