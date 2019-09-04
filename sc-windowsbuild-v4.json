@@ -21,7 +21,7 @@
             "gallery_name": "scsig01",
             "image_name": "packerbase",
             "image_version": "",
-            "replication_regions": ["westus", "eastus"]
+            "replication_regions": []
         },
         "managed_image_resource_group_name": "sc-rg-infraautomation-01",
         "managed_image_name": "scbaseimagev1",
@@ -36,7 +36,6 @@
         "winrm_username": "packer",
         "location": "West US 2",
         "vm_size": "Standard_D16s_v3",
-        "disk_additional_size": 150
   }
 ],
 
