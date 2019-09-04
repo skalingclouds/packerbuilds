@@ -21,10 +21,10 @@
             "gallery_name": "scsig01",
             "image_name": "packerbase",
             "image_version": "1.0.0",
-            "replication_regions": ["westus", "eastus", "eastus2"]
+            "replication_regions": ["westus", "eastus"]
         },
         "managed_image_resource_group_name": "sc-rg-infraautomation-01",
-        "managed_image_name": "scpackerbaseimagev1",
+        "managed_image_name": "scbaseimagev1",
         "os_type": "Windows",
         "image_publisher": "MicrosoftWindowsServer",
         "image_offer": "WindowsServer",
@@ -37,7 +37,6 @@
         "location": "West US 2",
         "vm_size": "Standard_D16s_v3",
         "disk_additional_size": 150,
-        "async_resourcegroup_delete":true
   }
 ],
 
