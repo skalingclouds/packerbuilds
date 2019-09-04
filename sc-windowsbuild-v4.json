@@ -20,7 +20,7 @@
             "resource_group": "sc-rg-infraautomation-01",
             "gallery_name": "scsig01",
             "image_name": "packerbase",
-            "image_version": "3.0.0",
+            "image_version": "",
             "replication_regions": ["westus", "eastus"]
         },
         "managed_image_resource_group_name": "sc-rg-infraautomation-01",
