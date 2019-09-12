@@ -53,7 +53,6 @@
         "choco install azcopy -y",
         "choco install azurepowershell -y",
         "choco install sql-server-management-studio -y",
-        "c:\\python35\\pip.py install azure",
         " # NOTE: the following *3* lines are only needed if the you have installed the Guest Agent.",
         "  while ((Get-Service RdAgent).Status -ne 'Running') { Start-Sleep -s 5 }",
         "  while ((Get-Service WindowsAzureTelemetryService).Status -ne 'Running') { Start-Sleep -s 5 }",
