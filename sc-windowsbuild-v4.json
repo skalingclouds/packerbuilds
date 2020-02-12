@@ -17,14 +17,14 @@
         "subscription_id": "{{user `subscription_id`}}",
         "shared_image_gallery_destination": 
         {
-            "resource_group": "sc-rg-infraautomation-01",
+            "resource_group": "sc-coreinfra-01",
             "gallery_name": "scsig01",
             "image_name": "packerbase",
-            "image_version": "3.2.0",
+            "image_version": "1.0.0",
             "replication_regions": ["west us", "east us"]
         },
-        "managed_image_resource_group_name": "sc-rg-infraautomation-01",
-        "managed_image_name": "scbaseimagev1",
+        "managed_image_resource_group_name": "sc-coreinfra-01",
+        "managed_image_name": "scbaseimage",
         "os_type": "Windows",
         "image_publisher": "MicrosoftWindowsServer",
         "image_offer": "WindowsServer",
