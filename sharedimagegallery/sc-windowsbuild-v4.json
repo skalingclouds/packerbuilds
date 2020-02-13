@@ -17,14 +17,14 @@
         "subscription_id": "{{user `subscription_id`}}",
         "shared_image_gallery_destination": 
         {
-            "resource_group": "sc-coreinfra-01",
+            "resource_group": "sc-imagebakery-01",
             "gallery_name": "imagebakery01",
             "image_name": "windows",
             "image_version": "1.0.0",
             "replication_regions": ["west us", "east us"]
         },
-        "managed_image_resource_group_name": "sc-coreinfra-01",
-        "managed_image_name": "scbaseimage",
+        "managed_image_resource_group_name": "sc-imagebakery-01",
+        "managed_image_name": "scwinimage",
         "os_type": "Windows",
         "image_publisher": "MicrosoftWindowsServer",
         "image_offer": "WindowsServer",
