@@ -20,11 +20,11 @@
         "os_type": "Windows",
         "image_publisher": "MicrosoftWindowsServer",
         "image_offer": "WindowsServer",
-        "image_sku": "2016-Datacenter",
+        "image_sku": "2019-Datacenter",
         "communicator": "winrm",
         "winrm_use_ssl": true,
         "winrm_insecure": true,
-        "winrm_timeout": "7m",
+        "winrm_timeout": "30m",
         "winrm_username": "packer",
         "location": "West US 2",
         "vm_size": "Standard_D16s_v3"
