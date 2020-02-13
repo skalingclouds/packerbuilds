@@ -18,8 +18,8 @@
         "shared_image_gallery_destination": 
         {
             "resource_group": "sc-coreinfra-01",
-            "gallery_name": "scsig01",
-            "image_name": "packerbase",
+            "gallery_name": "imagebakery01",
+            "image_name": "windows",
             "image_version": "1.0.0",
             "replication_regions": ["west us", "east us"]
         },
