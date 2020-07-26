@@ -21,6 +21,6 @@ steps:
   inputs:
     connectedServiceType: 'azure'
     azureSubscription: 'Internal Subscription 1(d7cc508e-d2cc-46d7-8185-5b4cb24827bb)'
-    templatePath: '$(Build.ArtifactStagingDirectory)\base\sc-azdobuildagenttest.json'
+    templatePath: '.\base\sc-azdobuildagenttest.json'
     command: 'build'
     force: true
