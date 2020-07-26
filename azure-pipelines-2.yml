@@ -14,8 +14,8 @@ pool:
   - group: Non Secured Image Generation Variables
 
 steps:
-- bash: echo $(AZURE_LOCATION)
-- bash: echo $(AZURE_RESOURCE_GROUP)
+- bash: echo $(azure_location)
+- bash: echo $(azure_resource_group)
 - bash: echo $IMAGE_TYPE
 - task: Packer@1
   inputs:
