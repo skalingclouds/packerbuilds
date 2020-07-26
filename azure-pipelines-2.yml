@@ -1,0 +1,26 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- master
+
+pool:
+  vmImage: 'ubuntu-latest'
+  
+variables:
+  - group: Secured Image Generation Variables
+  - group: Non Secured Image Generation Variables
+
+steps:
+- bash: echo $(azure_location)
+- bash: echo $(azure_resource_group)
+- bash: echo $IMAGE_TYPE
+- task: Packer@1
+  inputs:
+    connectedServiceType: 'azure'
+    azureSubscription: 'Internal Subscription 1(d7cc508e-d2cc-46d7-8185-5b4cb24827bb)'
+    templatePath: 'base/sc-azdobuildagenttest.json'
+    command: 'build'
+    force: true
