@@ -1,8 +1,3 @@
-# Ideally we would use GitHub Actions for this, but since we use self-hosted machines to run image builds
-# we need the following features to use GitHub Actions for Images CI:
-# - https://github.community/t5/GitHub-Actions/Make-secrets-available-to-builds-of-forks/m-p/30678#M508
-# - https://github.community/t5/GitHub-Actions/GitHub-Actions-Manual-Trigger-Approvals/td-p/31504
-# - https://github.community/t5/GitHub-Actions/Protecting-github-workflows/td-p/30290
 
 pool:
     vmImage: 'ubuntu-latest'
