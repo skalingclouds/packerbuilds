@@ -13,12 +13,11 @@
     "builders": [
         {
             "type": "azure-arm",
-            "client_id": "{{user `clientid`}}",
-            "client_secret": "{{user `clientsecret`}}",
-            "subscription_id": "{{user `azure_subscription`}}",
-            "tenant_id": "{{user `azure_tenant`}}",
-            "os_disk_size_gb": "256",
-            "managed_image_resource_group_name": "{{user `azure_resource_group`}}",
+            "client_id": "{{user `client_id`}}",
+            "client_secret": "{{user `client_secret`}}",
+            "subscription_id": "{{user `subscription_id`}}",
+            "tenant_id": "{{user `tenant_id`}}",
+            "managed_image_resource_group_name": "{{user `resource_group`}}",
             "managed_image_name": "scazdobuildagent",
             "os_type": "Windows",
             "image_publisher": "MicrosoftWindowsServer",
@@ -31,6 +30,7 @@
             "winrm_username": "packer",
             "location": "West US 2",
             "vm_size": "Standard_D16_v3",
+            "os_disk_size_gb": "256",
             "async_resourcegroup_delete":true
         }
     ],
