@@ -10,6 +10,7 @@ jobs:
   cancelTimeoutInMinutes: 300
   variables:
   - group: Secured Image Generation Variables
+  - group: Non Secured Image Generation Variables
 
   steps:
   - task: PowerShell@2
