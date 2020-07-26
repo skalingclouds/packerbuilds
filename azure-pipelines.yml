@@ -32,9 +32,9 @@ jobs:
       targetType: filePath
       filePath: ./images.CI/build-image.ps1
       arguments: -ResourcesNamePrefix $(Build.BuildId) `
-                        -ClientId $(CLIENT_ID) `
-                        -ClientSecret $(CLIENT_SECRET) `
-                        -Image ${{ parameters.image_type }} `
+                        -ClientId $(CLIENTID) `
+                        -ClientSecret $(CLIENTSECRET) `
+                        -Image $(IMAGETYPE) `
                         -ResourceGroup $(AZURE_RESOURCE_GROUP) `
                         -StorageAccount $(AZURE_STORAGE_ACCOUNT) `
                         -SubscriptionId $(AZURE_SUBSCRIPTION) `
@@ -54,8 +54,8 @@ jobs:
                         -Organization $(RELEASE_TARGET_ORGANIZATION) `
                         -DefinitionId $(RELEASE_TARGET_DEFINITION_ID) `
                         -Project $(RELEASE_TARGET_PROJECT) `
-                        -ImageName ${{ parameters.image_type }} `
-                        -AccessToken $(RELEASE_TARGET_TOKEN)
+                        -ImageName $(IMAGETYPE) `
+                        -AccessToken $(RELEASETARGETTOKEN)
 
   - task: PowerShell@2
     displayName: 'Output Readme file content'
@@ -71,8 +71,8 @@ jobs:
       targetType: filePath
       filePath: ./images.CI/cleanup.ps1
       arguments: -ResourcesNamePrefix $(Build.BuildId) `
-                     -ClientId $(CLIENT_ID) `
-                     -ClientSecret $(CLIENT_SECRET) `
-                     -Image ${{ parameters.image_type }} `
+                     -ClientId $(CLIENTID) `
+                     -ClientSecret $(CLIENTSECRET) `
+                     -Image $(IMAGETYPE) `
                      -SubscriptionId $(AZURE_SUBSCRIPTION) `
                      -TenantId $(AZURE_TENANT)
