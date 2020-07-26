@@ -52,10 +52,7 @@ jobs:
                         -Project $(RELEASE_TARGET_PROJECT) `
                         -ImageName $(IMAGE_TYPE) `
                         -AccessToken $(RELEASETARGETTOKEN)
-<<<<<<< HEAD
 
-=======
->>>>>>> 23fc1e542a3898643ff9b712ab0bc0326f9eb582
   - task: PowerShell@2
     displayName: 'Clean up resources'
     condition: always()
