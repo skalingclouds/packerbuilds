@@ -4,9 +4,11 @@
 # - https://github.community/t5/GitHub-Actions/GitHub-Actions-Manual-Trigger-Approvals/td-p/31504
 # - https://github.community/t5/GitHub-Actions/Protecting-github-workflows/td-p/30290
 
+pool:
+    vmImage: 'ubuntu-latest'
+
 jobs:
 - job:
-  pool: ci-agent-pool
   timeoutInMinutes: 600
   cancelTimeoutInMinutes: 180
   variables:
