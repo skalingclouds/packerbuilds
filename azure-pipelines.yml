@@ -1,11 +1,12 @@
 
-pool:
-  vmImage: 'ubuntu-latest'
+
 
 jobs:
 - job:
 timeoutInMinutes: 600
 cancelTimeoutInMinutes: 180
+pool:
+  vmImage: 'ubuntu-latest'
 variables:
 - group: Secured Image Generation Variables
 - group: Non Secured Image Generation Variables
