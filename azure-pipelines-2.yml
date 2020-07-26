@@ -8,12 +8,15 @@ trigger:
 
 pool:
   vmImage: 'ubuntu-latest'
-
+  
   variables:
   - group: Secured Image Generation Variables
   - group: Non Secured Image Generation Variables
 
 steps:
+- bash: echo $(AZURE_LOCATION)
+- bash: echo $(AZURE_RESOURCE_GROUP)
+- bash: echo $IMAGE_TYPE
 - task: Packer@1
   inputs:
     connectedServiceType: 'azure'
