@@ -16,7 +16,7 @@ variables:
 steps:
 - bash: echo $(azure_location)
 - bash: echo $(azure_resource_group)
-- bash: echo $IMAGE_TYPE
+- bash: echo $(image_type)
 
 - task: Packer@1
   inputs:
