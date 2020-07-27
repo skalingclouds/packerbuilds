@@ -24,7 +24,6 @@ steps:
     azureSubscription: 'Internal Subscription 1(d7cc508e-d2cc-46d7-8185-5b4cb24827bb)'
     templatePath: 'base/sc-azdobuildagenttest.json'
     command: 'fix'
-    options: '> packer_fixed_$(Build.BuildNumber).json'
 - task: Packer@1
   inputs:
     connectedServiceType: 'azure'
